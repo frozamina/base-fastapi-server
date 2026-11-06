@@ -1,0 +1,19 @@
+[project]
+name = "base-fastapi-server"
+version = "1.0.0"
+description = "基项目：FastAPI 后端模板，含登录与权限，不含具体业务"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "sqlalchemy>=2.0",
+    "pymysql>=1.1",
+    "pydantic>=2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*", "scripts*"]
